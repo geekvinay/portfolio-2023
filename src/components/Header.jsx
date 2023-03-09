@@ -3,22 +3,37 @@ import { Link, BrowserRouter } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='bg-red-500 w-24 h-screen absolute top-0 bottom-0'>
-      <ul className='flex flex-col items-center justify-between  h-full'>
+    <div className='w-16 h-screen Absolute top-0 bottom-0 pb-8'>
+      <ul className='flex flex-col items-center justify-between h-full'>
+        <div className='h-[30vh] w-[1vh] bg-[#fff] mr'></div>
         <li>
-          <MyLink path='Home' />
+          <MyLink pathName='Contact' path='/contact' />
+        </li>
+        <li>
+          <MyLink pathName='About' path='/about' />
+        </li>
+        <li>
+          <MyLink pathName='Blog' path='/blog' />
+        </li>
+        <li>
+          <MyLink pathName='Home' path='/' />
         </li>
       </ul>
     </div>
   )
 }
 
-const MyLink = ({ path }) => {
+const MyLink = ({ path, pathName }) => {
   return (
     <Link className='flex flex-col' to={path}>
-      {path.split('').reverse().map(char => (
-        <span className='block w-full -rotate-90'>{char}</span>
-      ))}
+      {pathName
+        .split('')
+        .reverse()
+        .map(char => (
+          <span className='block w-full text-lg font-semibold -my-1 -rotate-90'>
+            {char}
+          </span>
+        ))}
     </Link>
   )
 }
