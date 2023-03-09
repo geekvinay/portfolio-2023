@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className='ml-16'>{children}</div>
+      <div className='mx'>{children}</div>
       <Footer />
     </>
   )

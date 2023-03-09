@@ -3,7 +3,7 @@ import { Link, BrowserRouter } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='w-16 h-screen Absolute top-0 bottom-0 pb-8'>
+    <div className='w-16 h-screen static top-0 bottom-0 pb-8'>
       <ul className='flex flex-col items-center justify-between h-full'>
         <div className='h-[30vh] w-[1vh] bg-[#fff] mr'></div>
         <li>
@@ -30,7 +30,7 @@ const MyLink = ({ path, pathName }) => {
         .split('')
         .reverse()
         .map(char => (
-          <span className='block w-full text-lg font-semibold -my-1 -rotate-90'>
+          <span className='block w-full text-lg font-semibold -mt-3 -rotate-90'>
             {char}
           </span>
         ))}
