@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='w-16 h-screen absolute right-0 top-0 bottom-0 pt-8'>
+    <div className='w-16 h-screen absolute right-0 top-0 bottom-0 pt-8 font-mono'>
       <ul className='flex flex-col justify-between items-center justify-end h-full'>
         <li className=''>
           <MyLink path='' pathName='LinkedIn'></MyLink>
