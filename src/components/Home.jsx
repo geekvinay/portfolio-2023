@@ -1,9 +1,10 @@
 import React from 'react'
 
+// ############################## Add background to the hero text
 const Home = () => {
   return (
     <div className='w-screen min-h-screen px-40 flex flex-col justify-around items-center'>
-      <div className='hero--section flex flex-col items-left justify-center px-[5rem] py-[2rem]'>
+      <div className='hero--section particles-js flex flex-col items-left justify-center px-[5rem] py-[2rem]'>
         <h2 className='text-xl opacity-70'>Computer Science Student</h2>
         <h1 className='font--highlight text-[10rem] leading-[90%] font-extrabold uppercase'>
           Vinay{' '}
