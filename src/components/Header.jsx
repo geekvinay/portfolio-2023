@@ -3,7 +3,7 @@ import { Link, BrowserRouter } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='w-16 h-screen absolute top-0 bottom-0 pb-8 font-mono'>
+    <div className='w-16 z-10 h-screen absolute top-0 bottom-0 pb-8 font-mono'>
       <ul className='flex flex-col items-center justify-between h-full'>
         <div className='h-[30vh] w-[1vh] bg-[#fff] mr '></div>
         <li>

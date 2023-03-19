@@ -1,32 +1,31 @@
 import React from 'react'
+import ParticlesAPP from '../assets/Particles'
 
 // ############################## Add background to the hero text
 const Home = () => {
   return (
     <div className='w-screen min-h-screen px-40 flex flex-col justify-around items-center'>
-      <div className='hero--section particles-js flex flex-col items-left justify-center px-[5rem] py-[2rem]'>
-        <h2 className='text-xl opacity-70'>Computer Science Student</h2>
-        <h1 className='font--highlight text-[10rem] leading-[90%] font-extrabold uppercase'>
-          Vinay{' '}
+      <div className='hero--section relative particles flex flex-col items-left justify-center px-[5rem] py-[2rem]'>
+        {/* <ParticlesAPP className='-z-10' /> */}
+        <h2 className='text-xl opacity-70 z-10'>&#123; Hello World! &#125;</h2>
+        <h1 className='font--highlight z-10 text-[6rem] text-left leading-[90%] font-extrabold uppercase animate-'>
+          Vinay Kishore
         </h1>
-        <h1 className='font--highlight text-[10rem] leading-[90%] font-extrabold uppercase'>
-          Kishore
-        </h1>
-        <p className='text-xl w-[60%] opacity-70'>
+
+        <p className='text-xl z-10 w-[60%] opacity-70'>
           I Describe myself as a Technophile, Neophile and a creative
-          <span className='text-cyan-300 font-semibold opacity-100'>
+          <h2 className='font-mono text-2xl opacity-100 inline font-bold'>
             {' '}
-            web developer
-          </span>
+            developer
+          </h2>
           . I like Tech, Automobile and Innovations.
         </p>
       </div>
-
-      <div className='h-10rem'>
-        {/* This class doesn't do anything much but space */}
-      </div>
+      {/* <ParticlesAPP /> */}
     </div>
   )
 }
 
 export default Home
+
+//
