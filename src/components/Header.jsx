@@ -16,7 +16,7 @@ const Header = () => {
           <MyLink pathName='Blog' path='/blog' />
         </li>
         <li>
-          <MyLink pathName='Home' path='/' />
+          <MyLink pathName='Back' path='/' />
         </li>
       </ul>
     </div>
